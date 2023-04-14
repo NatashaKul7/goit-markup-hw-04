@@ -1,0 +1,385 @@
+:root {
+  /* Fonts */
+  --primary-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+
+  /* Text colors */
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: #2e2f42;
+  --grey: #2e2f42;
+  --white: #ffffff;
+  --dairy: #fcfcfc;
+
+  /* BG-color */
+  --white-bg-cl: #ffffff;
+  --navy-blue-bg-cl: #2e2f42;
+  --cloud-bg-cl: #f4f4fd;
+  --iris-bg-cl: #4d5ae5;
+  --ocean-bg-cl: #404bbf;
+}
+
+/* Reset start */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.button {
+  font-family: inherit;
+  cursor: pointer;
+  padding: 12px 24px;
+}
+
+/* Reset end */
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* body */
+body {
+  background-color: var(--white-bg-cl);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--slate);
+}
+/* header */
+/* logo */
+
+.header {
+  border: 1px solid var(--cornflower);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: var(--iris);
+  text-transform: uppercase;
+
+  margin-right: 76px;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-logo {
+  color: var(--navy-blue);
+}
+
+/* navigation */
+.header-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav-list:last-child {
+  margin-right: 0;
+}
+
+.header-nav-item .link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--navy-blue);
+
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* contact */
+.contact-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact .link {
+  color: var(--slate);
+  font-style: normal;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.contact {
+  font-style: normal;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--ocean);
+}
+
+/* hero */
+.hero {
+  background-color: var(--navy-blue-bg-cl);
+  text-align: center;
+  padding: 188px 0;
+}
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+
+  color: var(--white);
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--iris-bg-cl);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.hero-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--ocean-bg-cl);
+}
+
+/* section */
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--navy-blue);
+
+  margin-bottom: 72px;
+}
+
+/* advantages / team */
+
+.advantages-section {
+  padding-bottom: 0;
+}
+
+.advantages-list,
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-item .title,
+.team-item .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+.advantages-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.team {
+  background-color: var(--cloud-bg-cl);
+  padding-bottom: 120px;
+}
+.team-item {
+  background-color: var(--white-bg-cl);
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  text-align: center;
+}
+
+.team-card {
+  padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item .title {
+  text-align: center;
+}
+.team-item .text {
+  text-align: center;
+}
+
+/* what are we doing */
+.list-doing {
+  display: flex;
+  gap: 24px;
+}
+
+/* footer */
+.footer {
+  background-color: var(--navy-blue-bg-cl);
+
+  padding: 100px 0;
+}
+.footer-logo {
+  color: var(--cloud);
+}
+.footer .text {
+  color: var(--cloud);
+  width: 264px;
+}
+.footer .logo {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 16px;
+}
+
+.footer .link {
+  display: inline-block;
+}
+
+/* portfolio */
+/* our work */
+
+.work-section {
+  padding: 96px 0 120px;
+}
+
+.work-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+.work-section .text {
+  color: var(--slate);
+}
+.work-section .button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--iris);
+  background-color: var(--cloud-bg-cl);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
+}
+
+.work-section .button:hover,
+.work-section .button:focus {
+  color: var(--white);
+  background-color: var(--ocean-bg-cl);
+
+  border: 1px solid transparent;
+}
+
+.work-list {
+  display: flex;
+  gap: 24px;
+  /* justify-content: center; */
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+/* .card-list:nth-last-child(-n + 3) {
+  padding-bottom: 120px;
+} */
+
+.work-card {
+  border: 1px solid var(--cornflower);
+  border-top: none;
+  padding: 32px 16px;
+}
