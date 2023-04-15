@@ -23,6 +23,7 @@
   --cloud-bg-cl: #f4f4fd;
   --iris-bg-cl: #4d5ae5;
   --ocean-bg-cl: #404bbf;
+  --green-bg-cl: #31d0aa;
 }
 
 /* Reset start */
@@ -184,7 +185,18 @@ body {
 
 /* hero */
 .hero {
-  background-color: var(--navy-blue-bg-cl);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/section-hero/people-office\ 1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+
   text-align: center;
   padding: 188px 0;
 }
@@ -239,6 +251,17 @@ body {
 
 /* advantages / team */
 
+.advantages-top-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.advantages-top-item {
+  padding: 24px 100px;
+  background-color: var(--cloud-bg-cl);
+  margin-bottom: 8px;
+}
+
 .advantages-section {
   padding-bottom: 0;
 }
@@ -260,8 +283,33 @@ body {
   margin-bottom: 8px;
 }
 
-.advantages-item {
+.advantages-item,
+.team-item {
   width: calc((100% - 72px) / 4);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  fill: var(--white);
+  background-color: var(--iris-bg-cl);
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--ocean-bg-cl);
 }
 
 .team {
@@ -288,12 +336,41 @@ body {
 }
 .team-item .text {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 /* what are we doing */
 .list-doing {
   display: flex;
   gap: 24px;
+}
+
+/* Section 4 Customers */
+.customers {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.customer-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--light-slate);
+
+  color: var(--light-slate);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  fill: var(--ocean);
+  border: 1px solid var(--ocean);
+}
+.customer-icon {
+  fill: currentColor;
 }
 
 /* footer */
@@ -315,8 +392,23 @@ body {
   margin-bottom: 16px;
 }
 
-.footer .link {
-  display: inline-block;
+.footer-list {
+  display: flex;
+}
+
+.text-right {
+  font-weight: 500px;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.footer-item {
+  margin-right: 120px;
+}
+
+.footer .social-link:hover,
+.footer .social-link:focus {
+  background-color: var(--green-bg-cl);
 }
 
 /* portfolio */
