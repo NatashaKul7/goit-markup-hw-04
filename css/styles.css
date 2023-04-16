@@ -271,12 +271,6 @@ body {
   gap: 24px;
 }
 
-/* .advantages-top-item {
-  padding: 24px 100px;
-  background-color: var(--cloud-bg-cl);
-  margin-bottom: 8px;
-} */
-
 .advantages-section {
   padding-bottom: 0;
 }
@@ -420,10 +414,6 @@ body {
   margin-bottom: 16px;
 }
 
-/* .footer-list {
-  display: flex;
-} */
-
 .container-footer {
   display: flex;
   align-items: baseline;
@@ -431,13 +421,18 @@ body {
 }
 
 .text-right {
-  font-weight: 500px;
+  font-weight: 500;
   margin-bottom: 16px;
+
   color: var(--white);
 }
 
 .footer-item {
   margin-right: 120px;
+}
+
+.footer .socials {
+  gap: 16px;
 }
 
 .footer .social-link:hover,
