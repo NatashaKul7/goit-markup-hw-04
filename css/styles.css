@@ -191,7 +191,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/section-hero/people-office\ 1.jpg);
+    url(../images/people-office\ 1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -369,6 +369,10 @@ body {
 }
 
 /* Section 4 Customers */
+.customers .section-title {
+  line-height: 1.1;
+}
+
 .customers {
   display: flex;
   justify-content: center;
@@ -378,11 +382,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 
   width: 168px;
   height: 88px;
   border: 1px solid var(--light-slate);
+  border-radius: 4px;
 
   color: var(--light-slate);
 }
@@ -415,8 +420,14 @@ body {
   margin-bottom: 16px;
 }
 
-.footer-list {
+/* .footer-list {
   display: flex;
+} */
+
+.container-footer {
+  display: flex;
+  align-items: baseline;
+  gap: 120px;
 }
 
 .text-right {
