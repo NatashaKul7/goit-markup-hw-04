@@ -191,7 +191,8 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/section-hero/people-office\ 1.jpg);
+    url(../images/section-hero/people-office1.jpg);
+  background-color: var(--navy-blue-bg-cl);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
